@@ -1,0 +1,231 @@
+/*
+Theme Name: Theme enfant
+Description: Theme enfant de Maureen Mermerize
+Author: Maureen - OpenClassroom
+Author URI: https://www.wpserveur.net
+Template: mesmerize
+Version: 5.1.1
+*/
+
+@keyframes animationButton { /* Animation Button page d'accueil */
+    0% {
+        transform: translateX(-1000px) rotate(90deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.post-content-single .wp-post-image { /* Enlevé l'apparition de l'image mis en avant dans les articles */
+	display:none;
+}
+
+.align-holder.center .header-subtitle { /* Taille du sous-titre sur la page d'accueil */ 
+		font-size: 35px;
+}
+
+#tableauevent tr:hover { /* Ligne du tableau surlignées au survol */
+	background: #B4B4B4;
+}
+
+a.button.big.color1.round { /* Bouton page d'accueil */
+	background-color: rgba(179, 82, 81, 0.8);
+	border: white solid 2px;
+	animation: animationButton 1s forwards ease-in;
+}
+
+.tbdescription { /*Cellules description du tableau des évènements */
+	width: 50%;
+	max-width: 700px;
+}
+
+#tableauevent { /* Tableau des évènements */
+ 	border-collapse:collapse;
+ 	color: black;
+}
+
+.celluleevent { /* Toutes les cellules du tableau des évènements */
+	border: solid #B35251 2px;
+	text-align: center;
+	padding: 0;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-right: 5px;
+	padding-left: 5px;
+	vertical-align: middle;
+}
+
+.tbbutton { /* Cellules des bouttons */
+	width: 10%;
+}
+
+.tbdate, .tbevent { /* Cellules des dates et cellules des noms */
+	width: 20%;
+	max-width: 500px;
+}
+
+.buttonins { /* Boutton d'inscription */
+	height: 30px;
+	width: 90%;
+	border-radius: 50px;
+	border: solid #278384 1px;
+	background-color: #278384;
+	color: #ffffff;
+	font-size: 17px;
+}
+
+ul.dropdown-menu.active-line-bottom>.current-menu-item>a, ul.dropdown-menu.active-line-bottom>.current_page_item>a, ul.dropdown-menu.default>.current-menu-item>a, ul.dropdown-menu.default>.current_page_item>a { /* Bouton de la naviguation actif */
+	border-bottom: 3px solid #B35251;
+}
+
+ul.dropdown-menu.active-line-bottom>.current-menu-item>a:hover, ul.dropdown-menu.active-line-bottom>.current_page_item>a:hover, ul.dropdown-menu.default>.current-menu-item>a, ul.dropdown-menu.default>.current_page_item>a:hover { /* Bouton de la naviguation actif en survol (?) */
+	font-size: 17px;
+	font-weight: 1000;
+}
+
+a { /* Liens */
+    color: #B35251;
+}
+
+.coloured-nav ul.dropdown-menu.active-line-bottom>.current-menu-item>a, .coloured-nav ul.dropdown-menu.active-line-bottom>.current_page_item>a, .coloured-nav ul.dropdown-menu.default>.current-menu-item>a, .coloured-nav ul.dropdown-menu.default>.current_page_item>a, .fixto-fixed ul.dropdown-menu.active-line-bottom>.current-menu-item>a, .fixto-fixed ul.dropdown-menu.active-line-bottom>.current_page_item>a, .fixto-fixed ul.dropdown-menu.default>.current-menu-item>a, .fixto-fixed ul.dropdown-menu.default>.current_page_item>a { /* Bouton de la naviguation fixe actif */
+	border-bottom: 3px solid #B35251;
+}
+
+#tableauevent a { /* Tous les liens dans le tableau des évènements */
+	font-weight: 1000;
+}
+
+#tableauevent a:hover { /* Tous les liens dans le tableau des évènements  au survol */
+	font-weight: 1000;
+	font-size: 17px;
+	color: #B35251;
+}
+
+a:hover { /* Tous les liens au survol */
+	color: #278384;
+}
+
+.mesmerize-inner-page .page-content, .mesmerize-inner-page .content, .mesmerize-front-page.mesmerize-content-padding .page-content { /* Background */
+	background-color: #f4f4f4 !important; 
+}
+
+body {
+	color: black;
+	font-weight: 400;
+}
+
+input, select, textarea { /* Formulaire de contact */
+	border: solid 2px #B35251;
+}
+
+#boutoncontact, #boutoninscription { /* Bouton des formulaires */
+	background-color: #B35251;
+	font-weight: 700;
+	color: white;
+}
+
+sgpb-popup-content { /* Pop-up page d'accueil */
+	padding: 0;
+} 
+
+.souli { /* Date et heure dans les évènements */
+	text-decoration: #278384 underline;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.desevent { /* Phrase de description des catégories */
+	font-size: 25px;
+}
+
+.wp-block-latest-posts { /* Liste à puce page d'acceuil articles récents */
+	list-style-type: none;
+	text-align: center;
+}
+
+li:hover a { /* liens des listes à puces */
+	color: #278384 !important;
+}
+
+.widget { /* Cadre de widget */
+	border-radius: 30px;
+	border: 1px solid #278384 !important;
+}
+
+.eventful a, .eventful-today a { /*cellule du calendrier */
+	color: #B35251 !important;
+}
+
+.em-calendar-wrapper { /* calendrier */
+	border: 1px solid #278384;
+	border-radius: 30px;
+	background-color: white;
+}
+
+div.widget_em_calendar .em-calendar-wrapper { /*Calendrier widget */
+	border: none;
+}
+
+.read-more { /* Lire plus sur les articles */
+	color: #B35251;
+}
+
+.blog-post { /* Cadre des articles */
+	border-radius: 30px;
+}
+
+.wp-post-image { /* Image des articles */
+	border-radius: 30px;
+}
+
+input:focus:not(.button):not([type=submit]), textarea:focus:not(.button):not([type=submit]), select:focus:not(.button):not([type=submit]) { /* formulaire sélectionné */
+	border-color: #278384;
+    box-shadow: 0 0 0 1px #278384 inset;
+}
+
+.cont-event { /* Div qui contient 1 évènement sur plus d'infos */
+	display: flex;
+	border: 1px solid #278384;
+	border-radius: 30px;
+	margin-bottom: 10px;
+	background-color: white;
+}
+
+.descrip_event { /* Div qui contient la description de l'event sur plus d'infos */
+	margin-left: 10px;
+	margin-top: 25px;
+}
+
+.image_event { /* Div qui contient l'image de l'event sur plus d'infos */
+	margin: 10px;
+	margin-bottom: 5px;
+}
+
+#menu-menu-1 { /* menu widget */
+	list-style-type: square;
+	color: #278384;
+}
+
+@media all and (max-width: 480px) {
+
+	.ligne-event {
+		display: flex;
+		flex-wrap: wrap;
+		border: solid 2px #278384;
+	}
+
+	.celluleevent {
+		width: 50%;
+	}
+}
+
+@media all and (min-width: 481px) and (max-width: 768px) {
+	.tbbutton { /* Cellules des bouttons */
+		width: 15%;
+	}
+
+	.tbdescription { /*Cellules description du tableau des évènements */
+		width: 45%;
+		max-width: 700px;
+	}
+}
